@@ -487,7 +487,7 @@
 <parts>
 <part name="U$8" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5" value="MOUNTINGHOLE2.5"/>
 <part name="U$9" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5" value="MOUNTINGHOLE2.5"/>
-<part name="JP1" library="microbuilder" deviceset="HEADER-1X9" device="70MIL"/>
+<part name="GPS" library="microbuilder" deviceset="HEADER-1X9" device="70MIL"/>
 </parts>
 <sheets>
 <sheet>
@@ -496,7 +496,7 @@
 <instances>
 <instance part="U$8" gate="G$1" x="251.46" y="33.02"/>
 <instance part="U$9" gate="G$1" x="243.84" y="33.02"/>
-<instance part="JP1" gate="A" x="68.58" y="106.68" rot="R180">
+<instance part="GPS" gate="A" x="68.58" y="106.68" rot="R180">
 <attribute name="NAME" x="74.93" y="93.345" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="74.93" y="121.92" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -935,7 +935,7 @@ einem neuen Namen ab.</description>
 <element name="U$9" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="22.86" y="31.75">
 <attribute name="BOM" value="EXCLUDE" x="22.86" y="31.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1" library="microbuilder" package="1X09_ROUND_70" value="" x="12.7" y="2.032" rot="R180">
+<element name="GPS" library="microbuilder" package="1X09_ROUND_70" value="" x="12.7" y="2.032" rot="R180">
 <attribute name="NAME" x="24.2062" y="0.2032" size="0.8128" layer="25" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="24.13" y="5.207" size="0.8128" layer="27" rot="R180"/>
 </element>

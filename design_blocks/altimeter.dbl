@@ -358,14 +358,14 @@
 </class>
 </classes>
 <parts>
-<part name="JP1" library="microbuilder" deviceset="HEADER-1X5" device="70MIL"/>
+<part name="ALTIMETER" library="microbuilder" deviceset="HEADER-1X5" device="70MIL"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="JP1" gate="A" x="162.56" y="101.6">
+<instance part="ALTIMETER" gate="A" x="162.56" y="101.6">
 <attribute name="NAME" x="156.21" y="109.855" size="1.778" layer="95"/>
 <attribute name="VALUE" x="156.21" y="91.44" size="1.778" layer="96"/>
 </instance>
@@ -720,7 +720,7 @@ einem neuen Namen ab.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="JP1" library="microbuilder" package="1X05_ROUND_70" value="" x="8.89" y="1.397">
+<element name="ALTIMETER" library="microbuilder" package="1X05_ROUND_70" value="" x="8.89" y="1.397">
 <attribute name="NAME" x="2.4638" y="3.2258" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="2.54" y="-1.778" size="0.4064" layer="27" ratio="10"/>
 </element>
