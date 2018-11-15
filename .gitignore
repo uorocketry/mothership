@@ -43,7 +43,7 @@ eagle.epf
 
 *.s#*
 *.b#*
-
+*.d#*
 *.info
 
 *.eps
