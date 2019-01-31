@@ -192,6 +192,10 @@
 <text x="71" y="129" size="1.778" layer="48">uORocketry </text>
 <text x="70.5" y="125.5" size="1.778" layer="48">Power Board</text>
 <text x="74.5" y="122.5" size="1.778" layer="48">v1.0</text>
+<circle x="9.75" y="140" radius="4.125" width="0" layer="39"/>
+<circle x="77.75" y="140" radius="4.125" width="0" layer="39"/>
+<circle x="77.75" y="10" radius="4.125" width="0" layer="39"/>
+<circle x="9.75" y="10" radius="4.125" width="0" layer="39"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1673,7 +1677,10 @@ design rules under a new name.</description>
 <vertex x="87.5" y="0"/>
 <vertex x="87.5" y="150"/>
 </polygon>
-<wire x1="34.85" y1="131.33" x2="16.7634" y2="129.9215" width="0" layer="19" extent="1-1"/>
+<wire x1="16.7634" y1="129.9215" x2="19.251728125" y2="129.8909875" width="8" layer="1"/>
+<wire x1="19.251728125" y1="129.8909875" x2="30.75" y2="129.75" width="0.1524" layer="1"/>
+<wire x1="30.75" y1="129.75" x2="32" y2="131.25" width="0.1524" layer="1"/>
+<wire x1="32" y1="131.25" x2="34.85" y2="131.33" width="0.1524" layer="1"/>
 </signal>
 <signal name="SEQ">
 <contactref element="IN1" pad="2"/>
