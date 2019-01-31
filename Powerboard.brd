@@ -1713,16 +1713,15 @@ design rules under a new name.</description>
 <contactref element="J2" pad="+"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="14" y="125"/>
-<vertex x="21.5" y="125"/>
 <vertex x="29" y="125"/>
-<vertex x="33" y="129.5"/>
-<vertex x="36.5" y="129.5"/>
+<vertex x="33.44444375" y="130"/>
+<vertex x="36.5" y="130"/>
 <vertex x="36.5" y="127"/>
 <vertex x="33" y="127"/>
 <vertex x="28" y="121"/>
 <vertex x="14" y="121"/>
 </polygon>
-<wire x1="34.85" y1="128.79" x2="17.5" y2="123" width="0" layer="19" extent="1-1"/>
+<wire x1="17.5" y1="123" x2="22.25" y2="123" width="3.75" layer="1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="OUT1" pad="3"/>
