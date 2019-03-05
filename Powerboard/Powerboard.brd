@@ -178,10 +178,10 @@
 <text x="56.313" y="134.4034" size="1.016" layer="21" font="vector" ratio="15" rot="R180">GND</text>
 <text x="56.313" y="136.9434" size="1.016" layer="21" font="vector" ratio="15" rot="R180">VOUT</text>
 <text x="56.313" y="131.8634" size="1.016" layer="21" font="vector" ratio="15" rot="R180">TRIM</text>
-<hole x="9.75" y="140" drill="5.5"/>
-<hole x="9.75" y="10" drill="5.5"/>
-<hole x="77.75" y="10" drill="5.5"/>
-<hole x="77.75" y="140" drill="5.5"/>
+<hole x="9.75" y="140" drill="6.6"/>
+<hole x="9.75" y="10" drill="6.6"/>
+<hole x="77.75" y="10" drill="6.6"/>
+<hole x="77.75" y="140" drill="6.6"/>
 <dimension x1="77.75" y1="142.75" x2="77.75" y2="137.25" x3="97" y3="140" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="78" y1="140" x2="10" y2="140" x3="44" y3="169" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="10" y1="9" x2="10" y2="139" x3="-10" y3="74" textsize="1.778" layer="47" dtype="diameter"/>
@@ -192,10 +192,14 @@
 <text x="71" y="129" size="1.778" layer="48">uORocketry </text>
 <text x="70.5" y="125.5" size="1.778" layer="48">Power Board</text>
 <text x="74.5" y="122.5" size="1.778" layer="48">v1.0</text>
-<circle x="9.75" y="140" radius="4.125" width="0" layer="39"/>
-<circle x="77.75" y="140" radius="4.125" width="0" layer="39"/>
-<circle x="77.75" y="10" radius="4.125" width="0" layer="39"/>
-<circle x="9.75" y="10" radius="4.125" width="0" layer="39"/>
+<circle x="9.75" y="140" radius="5.125" width="0" layer="39"/>
+<circle x="77.75" y="140" radius="5.125" width="0" layer="39"/>
+<circle x="77.75" y="10" radius="5.125" width="0" layer="39"/>
+<circle x="9.75" y="10" radius="5.125" width="0" layer="39"/>
+<wire x1="17.25" y1="115.25" x2="51.25" y2="115.25" width="0.2032" layer="51"/>
+<wire x1="51.25" y1="115.25" x2="51.25" y2="10.25" width="0.2032" layer="51"/>
+<wire x1="51.25" y1="10.25" x2="17.25" y2="10.25" width="0.2032" layer="51"/>
+<wire x1="17.25" y1="10.25" x2="17.25" y2="115.25" width="0.2032" layer="51"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1658,6 +1662,11 @@ design rules under a new name.</description>
 <attribute name="SF_ID" value="PRT-11864" x="17.5" y="123" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="20.802" y="134.811" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
+<element name="J3" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="" x="4.75" y="126.75" smashed="yes">
+<attribute name="NAME" x="3.48" y="129.29" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="PROD_ID" value="CONN-08399" x="4.75" y="126.75" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="3.48" y="128.02" size="0.6096" layer="27" font="vector" ratio="20"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1721,7 +1730,9 @@ design rules under a new name.</description>
 <vertex x="28" y="121"/>
 <vertex x="14" y="121"/>
 </polygon>
-<wire x1="17.5" y1="123" x2="22.25" y2="123" width="3.75" layer="1"/>
+<wire x1="17.5" y1="123" x2="15.75" y2="123" width="3.75" layer="1"/>
+<wire x1="17.5" y1="123" x2="22.75" y2="123" width="4" layer="1"/>
+<wire x1="22.75" y1="123" x2="23.25" y2="123" width="0.1524" layer="1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="OUT1" pad="3"/>

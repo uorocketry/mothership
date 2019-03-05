@@ -6065,6 +6065,7 @@ part number 2062-2P from STA</description>
 <part name="R_TRIM" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="BATTERY_CONN" device="_DEANS"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -6094,6 +6095,10 @@ part number 2062-2P from STA</description>
 <instance part="J2" gate="G$1" x="73.66" y="-40.64" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-48.26" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="71.12" y="-37.338" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="J3" gate="G$1" x="134.62" y="-58.42" smashed="yes" rot="R180">
+<attribute name="VALUE" x="137.16" y="-53.594" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="137.16" y="-58.928" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
