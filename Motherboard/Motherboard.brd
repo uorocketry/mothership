@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1651,6 +1651,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="1X03">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1880,10 +1918,15 @@ design rules under a new name.</description>
 <attribute name="NAME" x="10.23" y="99.564" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="10.23" y="93.087" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="" x="7" y="127" smashed="yes" rot="R270">
+<element name="POWER_IN" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="" x="7" y="127" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.54" y="128.27" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-08399" x="7" y="127" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="8.27" y="128.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="AIR_BRAKE" library="SparkFun-Connectors" package="1X03" value="" x="39.5" y="45" smashed="yes">
+<attribute name="NAME" x="38.23" y="46.397" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="PROD_ID" value="XXX-00000" x="39.5" y="45" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="38.23" y="42.968" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 </elements>
 <signals>
@@ -1899,13 +1942,17 @@ design rules under a new name.</description>
 <vertex x="87.5" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
+<contactref element="POWER_IN" pad="2"/>
+<contactref element="AIR_BRAKE" pad="1"/>
+<wire x1="40.41" y1="112.52" x2="53.378" y2="129.01" width="0" layer="19" extent="1-1"/>
 <wire x1="29.013" y1="110.69" x2="40.41" y2="112.52" width="0" layer="19" extent="1-1"/>
+<wire x1="7" y1="123.5" x2="29.013" y2="110.69" width="0" layer="19" extent="1-1"/>
+<wire x1="54.96" y1="87.51" x2="40.41" y2="112.52" width="0" layer="19" extent="1-1"/>
+<wire x1="39.72" y1="82.43" x2="54.96" y2="87.51" width="0" layer="19" extent="1-1"/>
+<wire x1="39.5" y1="45" x2="39.72" y2="82.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="ARDUINO_NANO1" pad="12"/>
-</signal>
-<signal name="VIN">
-<contactref element="ARDUINO_NANO1" pad="15"/>
 </signal>
 <signal name="3V3">
 <contactref element="ARDUINO_NANO1" pad="2"/>
@@ -1947,6 +1994,18 @@ design rules under a new name.</description>
 <wire x1="29.013" y1="113.23" x2="40.39" y2="117.43" width="0" layer="19" extent="1-1"/>
 <wire x1="17.29" y1="123.7" x2="29.013" y2="113.23" width="0" layer="19" extent="1-1"/>
 <wire x1="54.96" y1="74.81" x2="40.39" y2="117.43" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="AIR_BRAKE" pad="2"/>
+<contactref element="POWER_IN" pad="1"/>
+<contactref element="ARDUINO_NANO1" pad="15"/>
+<wire x1="7" y1="127" x2="54.96" y2="90.05" width="0" layer="19" extent="1-1"/>
+<wire x1="42.04" y1="45" x2="54.96" y2="90.05" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="AIR_BRAKE" pad="3"/>
+<contactref element="ARDUINO_NANO1" pad="24"/>
+<wire x1="44.58" y1="45" x2="39.72" y2="69.73" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

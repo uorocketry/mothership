@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6063,9 +6063,9 @@ part number 2062-2P from STA</description>
 <part name="U$7" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="U$8" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="R_TRIM" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
-<part name="J2" library="SparkFun-Connectors" deviceset="BATTERY_CONN" device="_DEANS"/>
-<part name="J3" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
+<part name="TO_MOTHERBOARD" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
+<part name="DEANS" library="SparkFun-Connectors" deviceset="BATTERY_CONN" device="_DEANS"/>
+<part name="TERMINAL_BLOCK" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -6088,17 +6088,17 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="148.59" y="-24.3586" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="148.59" y="-19.558" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J1" gate="G$1" x="175.26" y="-17.78" smashed="yes" rot="R180">
+<instance part="TO_MOTHERBOARD" gate="G$1" x="175.26" y="-17.78" smashed="yes" rot="R180">
 <attribute name="VALUE" x="177.8" y="-12.954" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="177.8" y="-18.288" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="NAME" x="180.34" y="-23.368" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J2" gate="G$1" x="73.66" y="-40.64" smashed="yes">
+<instance part="DEANS" gate="G$1" x="73.66" y="-40.64" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-48.26" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="71.12" y="-37.338" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J3" gate="G$1" x="134.62" y="-58.42" smashed="yes" rot="R180">
-<attribute name="VALUE" x="137.16" y="-53.594" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="137.16" y="-58.928" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="TERMINAL_BLOCK" gate="G$1" x="73.66" y="-53.34" smashed="yes">
+<attribute name="VALUE" x="71.12" y="-58.166" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="68.58" y="-57.912" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -6109,9 +6109,13 @@ part number 2062-2P from STA</description>
 <wire x1="55.88" y1="-17.78" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
 <label x="76.2" y="-17.78" size="1.778" layer="95"/>
 <pinref part="IN1" gate="G$1" pin="4"/>
-<pinref part="J2" gate="G$1" pin="-"/>
+<pinref part="DEANS" gate="G$1" pin="-"/>
 <wire x1="81.28" y1="-43.18" x2="91.44" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-40.64" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="TERMINAL_BLOCK" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="-53.34" x2="91.44" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-53.34" x2="91.44" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="91.44" y="-40.64"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="-20.32" x2="149.86" y2="-20.32" width="0.1524" layer="91"/>
@@ -6119,7 +6123,7 @@ part number 2062-2P from STA</description>
 <pinref part="OUT1" gate="G$1" pin="2"/>
 <pinref part="R_TRIM" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="-22.86" x2="149.86" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="TO_MOTHERBOARD" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="-20.32" x2="167.64" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="149.86" y="-20.32"/>
 </segment>
@@ -6158,16 +6162,20 @@ part number 2062-2P from STA</description>
 <wire x1="55.88" y1="-15.24" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
 <label x="76.2" y="-15.24" size="1.778" layer="95"/>
 <pinref part="IN1" gate="G$1" pin="5"/>
-<pinref part="J2" gate="G$1" pin="+"/>
+<pinref part="DEANS" gate="G$1" pin="+"/>
 <wire x1="81.28" y1="-40.64" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-38.1" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="TERMINAL_BLOCK" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-50.8" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="88.9" y="-38.1"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
 <segment>
 <label x="129.54" y="-17.78" size="1.778" layer="95"/>
 <pinref part="OUT1" gate="G$1" pin="3"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="TO_MOTHERBOARD" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-17.78" x2="167.64" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
