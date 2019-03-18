@@ -7583,6 +7583,62 @@ No silk outline, but tDocu layer shows pin location.
 </deviceset>
 </devicesets>
 </library>
+<library name="uORocketry-parts">
+<packages>
+<package name="DFR0229">
+<wire x1="-10" y1="14.15" x2="10" y2="14.15" width="0.127" layer="21"/>
+<wire x1="10" y1="14.15" x2="10" y2="-14.15" width="0.127" layer="21"/>
+<wire x1="10" y1="-14.15" x2="-10" y2="-14.15" width="0.127" layer="21"/>
+<wire x1="-10" y1="-14.15" x2="-10" y2="14.15" width="0.127" layer="21"/>
+<pad name="MISO" x="-5.6" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="SCK" x="-3.06" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="SS" x="-0.52" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="MOSI" x="2.02" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="GND" x="4.56" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="+5V" x="7.1" y="-11.25" drill="1.016" rot="R90"/>
+<text x="-3.937" y="14.6812" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.4798" y="-15.8496" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DFR0229">
+<pin name="MISO" x="10.16" y="6.35" length="middle" rot="R180"/>
+<pin name="SCK" x="10.16" y="3.81" length="middle" rot="R180"/>
+<pin name="SS" x="10.16" y="1.27" length="middle" rot="R180"/>
+<pin name="MOSI" x="10.16" y="-1.27" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-3.81" length="middle" rot="R180"/>
+<pin name="5V" x="10.16" y="-6.35" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="8.89" x2="5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.89" x2="5.08" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-8.89" x2="-5.08" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="8.89" width="0.254" layer="94"/>
+<text x="-5.08" y="9.144" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DFR0229">
+<gates>
+<gate name="G$1" symbol="DFR0229" x="86.36" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="DFR0229">
+<connects>
+<connect gate="G$1" pin="5V" pad="+5V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="SS" pad="SS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7604,6 +7660,7 @@ No silk outline, but tDocu layer shows pin location.
 <part name="POWER_IN" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 <part name="AIR_BRAKE" library="SparkFun-Connectors" deviceset="CONN_03" device=""/>
 <part name="U$2" library="ArduinoNanoV30" deviceset="YOST" device=""/>
+<part name="U$5" library="uORocketry-parts" deviceset="DFR0229" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7647,6 +7704,10 @@ No silk outline, but tDocu layer shows pin location.
 <instance part="U$2" gate="G$1" x="33.02" y="-11.43" smashed="yes">
 <attribute name="NAME" x="27.94" y="3.81" size="1.27" layer="95"/>
 <attribute name="VALUE" x="30.48" y="-31.75" size="1.27" layer="96"/>
+</instance>
+<instance part="U$5" gate="G$1" x="58.42" y="33.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="63.5" y="23.876" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="63.5" y="44.45" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -7735,6 +7796,11 @@ No silk outline, but tDocu layer shows pin location.
 <pinref part="J1" gate="J1" pin="2"/>
 <wire x1="-27.94" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
 <label x="-19.05" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<wire x1="48.26" y1="36.83" x2="40.64" y2="36.83" width="0.1524" layer="91"/>
+<label x="40.64" y="36.83" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -7830,6 +7896,18 @@ No silk outline, but tDocu layer shows pin location.
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="RX0"/>
 <wire x1="-62.23" y1="5.08" x2="-80.01" y2="5.08" width="0.1524" layer="91"/>
 <label x="-81.28" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
+<wire x1="-21.59" y1="0" x2="-19.05" y2="0" width="0.1524" layer="91"/>
+<label x="-17.78" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="5V"/>
+<wire x1="48.26" y1="39.37" x2="40.64" y2="39.37" width="0.1524" layer="91"/>
+<label x="41.91" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

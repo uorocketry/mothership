@@ -1655,6 +1655,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="uORocketry-parts">
+<packages>
+<package name="DFR0229">
+<wire x1="-10" y1="14.15" x2="10" y2="14.15" width="0.127" layer="21"/>
+<wire x1="10" y1="14.15" x2="10" y2="-14.15" width="0.127" layer="21"/>
+<wire x1="10" y1="-14.15" x2="-10" y2="-14.15" width="0.127" layer="21"/>
+<wire x1="-10" y1="-14.15" x2="-10" y2="14.15" width="0.127" layer="21"/>
+<pad name="MISO" x="-5.6" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="SCK" x="-3.06" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="SS" x="-0.52" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="MOSI" x="2.02" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="GND" x="4.56" y="-11.25" drill="1.016" rot="R90"/>
+<pad name="+5V" x="7.1" y="-11.25" drill="1.016" rot="R90"/>
+<text x="-3.937" y="14.6812" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.4798" y="-15.8496" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1895,6 +1913,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="43.69" y="115.89" size="1.27" layer="25"/>
 <attribute name="VALUE" x="43.69" y="96.84" size="1.27" layer="27"/>
 </element>
+<element name="U$5" library="uORocketry-parts" package="DFR0229" value="DFR0229" x="-46" y="120" smashed="yes" rot="R180">
+<attribute name="NAME" x="-42.063" y="105.3188" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-42.5202" y="135.8496" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1906,6 +1928,7 @@ design rules under a new name.</description>
 <contactref element="AIR_BRAKE" pad="1"/>
 <contactref element="U$2" pad="P$3"/>
 <contactref element="J1" pad="2"/>
+<contactref element="U$5" pad="GND"/>
 <wire x1="40.3875" y1="107.937" x2="53.378" y2="129.01" width="0" layer="19" extent="1-1"/>
 <wire x1="29.013" y1="110.69" x2="40.3875" y2="107.937" width="0" layer="19" extent="1-1"/>
 <wire x1="11.5" y1="98.04" x2="29.013" y2="110.69" width="0" layer="19" extent="1-1"/>
@@ -1913,9 +1936,7 @@ design rules under a new name.</description>
 <wire x1="39.72" y1="82.43" x2="54.96" y2="87.51" width="0" layer="19" extent="1-1"/>
 <wire x1="7" y1="123.5" x2="29.013" y2="110.69" width="0" layer="19" extent="1-1"/>
 <wire x1="39.5" y1="45" x2="39.72" y2="82.43" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="5V">
-<contactref element="ARDUINO_NANO1" pad="12"/>
+<wire x1="-50.56" y1="131.25" x2="7" y2="123.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3">
 <contactref element="ARDUINO_NANO1" pad="2"/>
@@ -1986,6 +2007,11 @@ design rules under a new name.</description>
 <contactref element="J1" pad="10"/>
 <contactref element="ARDUINO_NANO1" pad="17"/>
 <wire x1="21.66" y1="98.04" x2="39.72" y2="87.51" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="5V">
+<contactref element="ARDUINO_NANO1" pad="12"/>
+<contactref element="U$5" pad="+5V"/>
+<wire x1="-53.1" y1="131.25" x2="54.96" y2="82.43" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
