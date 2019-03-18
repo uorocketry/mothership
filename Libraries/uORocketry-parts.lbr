@@ -307,15 +307,15 @@
 <rectangle x1="13.6975" y1="4.4065" x2="14.2055" y2="4.5335" layer="42" rot="R90"/>
 <rectangle x1="15.0945" y1="3.0095" x2="15.2215" y2="3.5175" layer="42" rot="R90"/>
 <rectangle x1="15.0945" y1="1.6125" x2="15.2215" y2="2.1205" layer="42" rot="R90"/>
-<pad name="GPS0" x="14.7" y="9.43" drill="1.016"/>
-<pad name="GPS1" x="14.7" y="6.89" drill="1.016"/>
-<pad name="GPS2" x="14.7" y="4.35" drill="1.016"/>
-<pad name="GPS3" x="14.7" y="1.81" drill="1.016"/>
-<pad name="GPS4" x="14.7" y="-0.73" drill="1.016"/>
-<pad name="GPS5" x="14.7" y="-3.27" drill="1.016"/>
-<pad name="GPS6" x="14.7" y="-5.81" drill="1.016"/>
-<pad name="GPS7" x="14.7" y="-8.35" drill="1.016"/>
-<pad name="GPS8" x="14.7" y="-10.89" drill="1.016"/>
+<pad name="PPS" x="14.7" y="9.43" drill="1.016"/>
+<pad name="VIN" x="14.7" y="6.89" drill="1.016"/>
+<pad name="GND" x="14.7" y="4.35" drill="1.016"/>
+<pad name="RX" x="14.7" y="1.81" drill="1.016"/>
+<pad name="TX" x="14.7" y="-0.73" drill="1.016"/>
+<pad name="FIX" x="14.7" y="-3.27" drill="1.016"/>
+<pad name="VBAT" x="14.7" y="-5.81" drill="1.016"/>
+<pad name="EN" x="14.7" y="-8.35" drill="1.016"/>
+<pad name="3.3V" x="14.7" y="-10.89" drill="1.016"/>
 <wire x1="13.592" y1="10.538" x2="15.808" y2="10.538" width="0.127" layer="21"/>
 <wire x1="15.808" y1="10.538" x2="15.808" y2="-11.998" width="0.127" layer="21"/>
 <wire x1="15.808" y1="-11.998" x2="13.592" y2="-11.998" width="0.127" layer="21"/>
@@ -357,6 +357,26 @@
 <smd name="P$12" x="7.1125" y="6.017" dx="2.286" dy="2.159" layer="1" rot="R270"/>
 <text x="-3.81" y="8.89" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-10.16" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ALTIMETER">
+<wire x1="9.29" y1="6.54" x2="9.29" y2="-6.16" width="0" layer="51"/>
+<wire x1="9.29" y1="-6.16" x2="6.75" y2="-8.7" width="0" layer="51" curve="-90"/>
+<wire x1="6.75" y1="-8.7" x2="-7.347" y2="-8.7" width="0" layer="51"/>
+<wire x1="-7.347" y1="-8.7" x2="-9.887" y2="-6.16" width="0" layer="48" curve="-90"/>
+<wire x1="-9.887" y1="-6.16" x2="-9.887" y2="6.54" width="0" layer="51"/>
+<wire x1="-9.887" y1="6.54" x2="-7.347" y2="9.08" width="0" layer="51" curve="-90"/>
+<wire x1="-7.347" y1="9.08" x2="6.75" y2="9.08" width="0" layer="51"/>
+<wire x1="6.75" y1="9.08" x2="9.29" y2="6.54" width="0" layer="51" curve="-90"/>
+<text x="6.623" y="-4.382" size="1.016" layer="21" ratio="16" rot="R180">VIN</text>
+<text x="6.623" y="-1.842" size="1.016" layer="21" ratio="16" rot="R180">3Vo</text>
+<text x="6.623" y="0.571" size="1.016" layer="21" ratio="16" rot="R180">GND</text>
+<text x="6.623" y="2.984" size="1.016" layer="21" ratio="16" rot="R180">SCL</text>
+<text x="6.623" y="5.651" size="1.016" layer="21" ratio="16" rot="R180">SDA</text>
+<pad name="VIN" x="7.62" y="-5.08" drill="1.016" rot="R90"/>
+<pad name="3VO" x="7.62" y="-2.54" drill="1.016" rot="R90"/>
+<pad name="GND" x="7.62" y="0" drill="1.016" rot="R90"/>
+<pad name="SCL" x="7.62" y="2.54" drill="1.016" rot="R90"/>
+<pad name="SDA" x="7.62" y="5.08" drill="1.016" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -581,6 +601,19 @@ BUTTON</text>
 <text x="-5.08" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-20.32" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="ALTIMETER">
+<pin name="SDA" x="-7.62" y="5.08" length="middle"/>
+<pin name="SCL" x="-7.62" y="2.54" length="middle"/>
+<pin name="GND" x="-7.62" y="0" length="middle"/>
+<pin name="3VO" x="-7.62" y="-2.54" length="middle"/>
+<pin name="VIN" x="-7.62" y="-5.08" length="middle"/>
+<text x="-2.54" y="7.874" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO" prefix="ARDUINO_NANO" uservalue="yes">
@@ -762,15 +795,15 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <devices>
 <device name="" package="GPS">
 <connects>
-<connect gate="G$1" pin="3.3V" pad="GPS8"/>
-<connect gate="G$1" pin="EN" pad="GPS7"/>
-<connect gate="G$1" pin="FIX" pad="GPS5"/>
-<connect gate="G$1" pin="GND" pad="GPS2"/>
-<connect gate="G$1" pin="PPS" pad="GPS0"/>
-<connect gate="G$1" pin="RX" pad="GPS3"/>
-<connect gate="G$1" pin="TX" pad="GPS4"/>
-<connect gate="G$1" pin="VBAT" pad="GPS6"/>
-<connect gate="G$1" pin="VIN" pad="GPS1"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FIX" pad="FIX"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="PPS" pad="PPS"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -817,6 +850,25 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <connect gate="G$1" pin="USBD+" pad="P$5"/>
 <connect gate="G$1" pin="USBD-" pad="P$4"/>
 <connect gate="G$1" pin="VIN" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALTIMETER">
+<gates>
+<gate name="G$1" symbol="ALTIMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALTIMETER">
+<connects>
+<connect gate="G$1" pin="3VO" pad="3VO"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
