@@ -6066,6 +6066,7 @@ part number 2062-2P from STA</description>
 <part name="TO_MOTHERBOARD" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 <part name="DEANS" library="SparkFun-Connectors" deviceset="BATTERY_CONN" device="_DEANS"/>
 <part name="TERMINAL_BLOCK" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
+<part name="SWITCH" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -6099,6 +6100,10 @@ part number 2062-2P from STA</description>
 <instance part="TERMINAL_BLOCK" gate="G$1" x="73.66" y="-53.34" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-58.166" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="68.58" y="-57.912" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SWITCH" gate="G$1" x="73.66" y="-68.58" smashed="yes">
+<attribute name="VALUE" x="71.12" y="-73.406" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="68.58" y="-73.152" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -6159,16 +6164,12 @@ part number 2062-2P from STA</description>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="55.88" y1="-15.24" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-15.24" x2="93.98" y2="-15.24" width="0.1524" layer="91"/>
 <label x="76.2" y="-15.24" size="1.778" layer="95"/>
 <pinref part="IN1" gate="G$1" pin="5"/>
-<pinref part="DEANS" gate="G$1" pin="+"/>
-<wire x1="81.28" y1="-40.64" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-38.1" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="TERMINAL_BLOCK" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-50.8" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="88.9" y="-38.1"/>
+<pinref part="SWITCH" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="-68.58" x2="93.98" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-68.58" x2="93.98" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
@@ -6177,6 +6178,19 @@ part number 2062-2P from STA</description>
 <pinref part="OUT1" gate="G$1" pin="3"/>
 <pinref part="TO_MOTHERBOARD" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-17.78" x2="167.64" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="DEANS" gate="G$1" pin="+"/>
+<wire x1="81.28" y1="-40.64" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-50.8" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="TERMINAL_BLOCK" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="SWITCH" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-66.04" x2="88.9" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-66.04" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="88.9" y="-50.8"/>
 </segment>
 </net>
 </nets>
