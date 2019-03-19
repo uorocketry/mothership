@@ -6875,6 +6875,8 @@ No silk outline, but tDocu layer shows pin location.
 <pad name="GND" x="7.62" y="0" drill="1.016" rot="R90"/>
 <pad name="SCL" x="7.62" y="2.54" drill="1.016" rot="R90"/>
 <pad name="SDA" x="7.62" y="5.08" drill="1.016" rot="R90"/>
+<hole x="-7.347" y="6.5" drill="2.5"/>
+<hole x="-7.347" y="-6.16" drill="2.5"/>
 </package>
 <package name="GPS">
 <wire x1="13.634" y1="6.502" x2="13.634" y2="7.518" width="0.4064" layer="21"/>
