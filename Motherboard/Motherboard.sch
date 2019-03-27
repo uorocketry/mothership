@@ -6955,9 +6955,6 @@ No silk outline, but tDocu layer shows pin location.
 <pad name="GND" x="19.685" y="7.112" drill="1.016"/>
 <wire x1="0" y1="24.25" x2="0" y2="8" width="0.2032" layer="51"/>
 <wire x1="0" y1="8" x2="0" y2="0" width="0.2032" layer="51"/>
-<wire x1="0" y1="24.25" x2="-6.35" y2="24.25" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="24.25" x2="-6.35" y2="8" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="8" x2="0" y2="8" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
