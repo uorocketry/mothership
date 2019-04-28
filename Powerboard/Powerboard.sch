@@ -6159,9 +6159,20 @@ part number 2062-2P from STA</description>
 </net>
 <net name="ON/OFF" class="0">
 <segment>
-<wire x1="55.88" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-20.32" x2="88.9" y2="-20.32" width="0.1524" layer="91"/>
 <label x="76.2" y="-20.32" size="1.778" layer="95"/>
 <pinref part="IN1" gate="G$1" pin="3"/>
+<pinref part="DEANS" gate="G$1" pin="+"/>
+<wire x1="81.28" y1="-40.64" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-50.8" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="BATTERY_TERMINAL_BLOCK" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="SWITCH" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-66.04" x2="88.9" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-66.04" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="88.9" y="-50.8"/>
+<wire x1="88.9" y1="-20.32" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="88.9" y="-38.1"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -6182,19 +6193,6 @@ part number 2062-2P from STA</description>
 <wire x1="162.56" y1="-17.78" x2="162.56" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="TO_MOTHERBOARD" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="-20.32" x2="167.64" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="DEANS" gate="G$1" pin="+"/>
-<wire x1="81.28" y1="-40.64" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-50.8" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="BATTERY_TERMINAL_BLOCK" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="SWITCH" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="-66.04" x2="88.9" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-66.04" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="88.9" y="-50.8"/>
 </segment>
 </net>
 </nets>

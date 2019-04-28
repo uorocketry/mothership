@@ -7232,28 +7232,32 @@ No silk outline, but tDocu layer shows pin location.
 <label x="-17.78" y="33.02" size="1.778" layer="95"/>
 <label x="-17.78" y="33.02" size="1.778" layer="95"/>
 <label x="-17.78" y="33.02" size="1.778" layer="95"/>
-<junction x="-12.7" y="-25.4"/>
-<wire x1="-12.7" y1="-25.4" x2="2.54" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-25.4" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-25.4" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-25.4" x2="17.78" y2="-26.67" width="0.1524" layer="91"/>
-<pinref part="R_SCL" gate="G$1" pin="1"/>
-<junction x="2.54" y="-25.4"/>
-<pinref part="R_SDA" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="-20.32" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="5.08" y="-25.4"/>
 <wire x1="-12.7" y1="33.02" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-12.7" y="33.02"/>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
 <label x="-7.62" y="58.42" size="1.778" layer="95"/>
 <wire x1="-12.7" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-25.4" x2="-2.54" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-25.4"/>
+<wire x1="17.78" y1="-25.4" x2="17.78" y2="-26.67" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<wire x1="-2.54" y1="-33.02" x2="17.78" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-33.02" x2="17.78" y2="-26.67" width="0.1524" layer="91"/>
+<junction x="17.78" y="-26.67"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="VIN"/>
+<wire x1="-39.37" y1="80.01" x2="-45.72" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="80.01" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
+<label x="-45.72" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="D2"/>
-<wire x1="-62.23" y1="-2.54" x2="-63.5" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-68.58" y="-2.54" size="1.778" layer="95"/>
+<wire x1="-62.23" y1="-2.54" x2="-68.58" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="RX"/>
@@ -7265,6 +7269,7 @@ No silk outline, but tDocu layer shows pin location.
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="D3"/>
 <wire x1="-62.23" y1="-5.08" x2="-68.58" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-68.58" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="TX"/>
@@ -7275,7 +7280,8 @@ No silk outline, but tDocu layer shows pin location.
 <net name="GND" class="0">
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="GND@1"/>
-<wire x1="-62.23" y1="0" x2="-66.04" y2="0" width="0.1524" layer="91"/>
+<wire x1="-62.23" y1="0" x2="-68.58" y2="0" width="0.1524" layer="91"/>
+<label x="-71.12" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="GND@2"/>
@@ -7300,8 +7306,9 @@ No silk outline, but tDocu layer shows pin location.
 <wire x1="7.62" y1="53.34" x2="-1.27" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="7.62" y1="63.5" x2="-1.27" y2="63.5" width="0.1524" layer="91"/>
-<label x="-8.89" y="63.5" size="1.778" layer="95"/>
+<label x="-1.27" y="63.5" size="1.778" layer="95"/>
 <wire x1="-1.27" y1="53.34" x2="-1.27" y2="63.5" width="0.1524" layer="91"/>
+<label x="-76.2" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="GND"/>
@@ -7316,7 +7323,7 @@ No silk outline, but tDocu layer shows pin location.
 <segment>
 <pinref part="U$7" gate="G$1" pin="GND"/>
 <wire x1="-39.37" y1="77.47" x2="-46.99" y2="77.47" width="0.1524" layer="91"/>
-<label x="-48.26" y="78.74" size="1.778" layer="95"/>
+<label x="-53.34" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
@@ -7340,7 +7347,7 @@ No silk outline, but tDocu layer shows pin location.
 <wire x1="-6.35" y1="24.13" x2="-6.35" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
 <wire x1="7.62" y1="68.58" x2="-6.35" y2="68.58" width="0.1524" layer="91"/>
-<label x="-8.89" y="68.58" size="1.778" layer="95"/>
+<label x="-1.27" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -7359,23 +7366,7 @@ No silk outline, but tDocu layer shows pin location.
 <wire x1="-3.81" y1="40.64" x2="-3.81" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SCL"/>
 <wire x1="7.62" y1="66.04" x2="-3.81" y2="66.04" width="0.1524" layer="91"/>
-<label x="-8.89" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="AIR_BRAKE" gate="J$1" pin="2"/>
-<wire x1="-76.2" y1="15.24" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="15.24" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="25.4" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="25.4" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="POWER_IN" gate="G$1" pin="1"/>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="VIN"/>
-<wire x1="-22.86" y1="15.24" x2="-21.59" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-21.59" y1="15.24" x2="-21.59" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="15.24" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-22.86" y="15.24"/>
-<label x="-20.32" y="11.43" size="1.778" layer="95"/>
+<label x="-1.27" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -7385,6 +7376,7 @@ No silk outline, but tDocu layer shows pin location.
 <wire x1="-71.12" y1="17.78" x2="-71.12" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="D6"/>
 <wire x1="-71.12" y1="-12.7" x2="-62.23" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-76.2" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RADIO_SHORT" class="0">
@@ -7422,8 +7414,23 @@ No silk outline, but tDocu layer shows pin location.
 <net name="5V" class="0">
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
-<wire x1="-21.59" y1="0" x2="-19.05" y2="0" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="0" x2="-20.32" y2="0" width="0.1524" layer="91"/>
 <label x="-17.78" y="0" size="1.778" layer="95"/>
+<pinref part="AIR_BRAKE" gate="J$1" pin="2"/>
+<wire x1="-20.32" y1="0" x2="-19.05" y2="0" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="15.24" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="15.24" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="25.4" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="25.4" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="POWER_IN" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="15.24" x2="-21.59" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="15.24" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-22.86" y="15.24"/>
+<label x="-20.32" y="11.43" size="1.778" layer="95"/>
+<wire x1="-19.05" y1="0" x2="-17.78" y2="0" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="0" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-17.78" y="15.24"/>
+<label x="-76.2" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="5V"/>
@@ -7440,12 +7447,21 @@ No silk outline, but tDocu layer shows pin location.
 <wire x1="22.86" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
 <label x="12.7" y="101.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R_SCL" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="-25.4" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="R_SDA" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="-20.32" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="5.08" y="-25.4"/>
+<label x="7.62" y="-25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="D13"/>
 <wire x1="-21.59" y1="-27.94" x2="-16.51" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-15.24" y="-27.94" size="1.778" layer="95"/>
+<label x="-20.32" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="SCK"/>
