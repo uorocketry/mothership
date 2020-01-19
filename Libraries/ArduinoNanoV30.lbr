@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mm"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -340,6 +340,69 @@
 <text x="-3.81" y="8.89" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-10.16" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="GPIO_PI4">
+<wire x1="7" y1="6" x2="58" y2="6" width="0.127" layer="21"/>
+<wire x1="58" y1="6" x2="58" y2="1" width="0.127" layer="21"/>
+<wire x1="58" y1="1" x2="7" y2="1" width="0.127" layer="21"/>
+<wire x1="7" y1="1" x2="7" y2="6" width="0.127" layer="21"/>
+<pad name="P0" x="8.39" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P1" x="10.93" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P2" x="13.47" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P3" x="16.01" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P4" x="18.55" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P5" x="21.09" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P6" x="23.63" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P7" x="26.17" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P8" x="28.71" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P9" x="31.25" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P10" x="33.79" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P11" x="36.33" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P12" x="38.87" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P13" x="41.41" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P14" x="43.95" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P15" x="46.49" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P16" x="49.03" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P17" x="51.57" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P18" x="54.11" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P19" x="56.65" y="4.83795" drill="0.6" shape="square"/>
+<pad name="P20" x="56.65" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P21" x="54.11" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P22" x="51.57" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P23" x="49.03" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P24" x="46.49" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P25" x="43.95" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P26" x="41.41" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P27" x="38.87" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P28" x="36.33" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P29" x="33.79" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P30" x="31.25" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P31" x="28.71" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P32" x="26.17" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P33" x="23.63" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P34" x="21.09" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P35" x="18.55" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P36" x="16.01" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P37" x="13.47" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P38" x="10.93" y="2.29795" drill="0.6" shape="square"/>
+<pad name="P39" x="8.39" y="2.29795" drill="0.6" shape="square"/>
+<wire x1="85" y1="3" x2="85" y2="53" width="0.127" layer="51"/>
+<wire x1="3" y1="0" x2="82" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="3" x2="0" y2="53" width="0.127" layer="51"/>
+<hole x="3.5" y="52.5" drill="2.75"/>
+<circle x="3.5" y="52.5" radius="3" width="0.127" layer="21"/>
+<hole x="61.5" y="52.5" drill="2.75"/>
+<circle x="61.5" y="52.5" radius="3" width="0.127" layer="21"/>
+<hole x="3.5" y="3.5" drill="2.75"/>
+<circle x="3.5" y="3.5" radius="3" width="0.127" layer="21"/>
+<hole x="61.5" y="3.5" drill="2.75"/>
+<circle x="61.5" y="3.5" radius="3" width="0.127" layer="21"/>
+<wire x1="3" y1="56" x2="82" y2="56" width="0.1524" layer="51"/>
+<wire x1="3" y1="0" x2="0" y2="3" width="0.1524" layer="52" curve="-90"/>
+<wire x1="0" y1="53" x2="3" y2="56" width="0.1524" layer="52" curve="-90"/>
+<wire x1="82" y1="56" x2="85" y2="53" width="0.1524" layer="52" curve="-90"/>
+<wire x1="85" y1="3" x2="82" y2="0" width="0.1524" layer="52" curve="-90"/>
+<dimension x1="0" y1="53" x2="3.5" y2="53" x3="1.75" y3="54.5" textsize="1.778" layer="52" dtype="diameter"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -563,6 +626,53 @@ BUTTON</text>
 <text x="-5.08" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-20.32" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="GPIO_PI4">
+<pin name="3V3@1" x="-14.58" y="17.5" length="middle"/>
+<pin name="3" x="-14.58" y="15.5" length="middle"/>
+<pin name="5" x="-14.58" y="13.5" length="middle"/>
+<pin name="7" x="-14.58" y="11.5" length="middle"/>
+<pin name="GND@2" x="-14.58" y="9.5" length="middle"/>
+<pin name="11" x="-14.58" y="7.5" length="middle"/>
+<pin name="13" x="-14.58" y="5.5" length="middle"/>
+<pin name="15" x="-14.58" y="3.5" length="middle"/>
+<pin name="3V3@2" x="-14.58" y="1.5" length="middle"/>
+<pin name="19" x="-14.58" y="-0.5" length="middle"/>
+<pin name="21" x="-14.58" y="-2.5" length="middle"/>
+<pin name="23" x="-14.58" y="-4.5" length="middle"/>
+<pin name="GND@5" x="-14.58" y="-6.5" length="middle"/>
+<pin name="27" x="-14.58" y="-8.5" length="middle"/>
+<pin name="29" x="-14.58" y="-10.5" length="middle"/>
+<pin name="31" x="-14.58" y="-12.5" length="middle"/>
+<pin name="33" x="-14.58" y="-14.5" length="middle"/>
+<pin name="35" x="-14.58" y="-16.5" length="middle"/>
+<pin name="37" x="-14.58" y="-18.5" length="middle"/>
+<pin name="GND@9" x="-14.58" y="-20.5" length="middle"/>
+<pin name="5V@1" x="15.08" y="17.5" length="middle" rot="R180"/>
+<pin name="5V@2" x="15.08" y="15.5" length="middle" rot="R180"/>
+<pin name="GND@1" x="15.08" y="13.5" length="middle" rot="R180"/>
+<pin name="8" x="15.08" y="11.5" length="middle" rot="R180"/>
+<pin name="10" x="15.08" y="9.5" length="middle" rot="R180"/>
+<pin name="12" x="15.08" y="7.5" length="middle" rot="R180"/>
+<pin name="GND@3" x="15.08" y="5.5" length="middle" rot="R180"/>
+<pin name="16" x="15.08" y="3.5" length="middle" rot="R180"/>
+<pin name="18" x="15.08" y="1.5" length="middle" rot="R180"/>
+<pin name="GND@4" x="15.08" y="-0.5" length="middle" rot="R180"/>
+<pin name="22" x="15.08" y="-2.5" length="middle" rot="R180"/>
+<pin name="24" x="15.08" y="-4.5" length="middle" rot="R180"/>
+<pin name="26" x="15.08" y="-6.5" length="middle" rot="R180"/>
+<pin name="28" x="15.08" y="-8.5" length="middle" rot="R180"/>
+<pin name="GND@6" x="15.08" y="-10.5" length="middle" rot="R180"/>
+<pin name="32" x="15.08" y="-12.5" length="middle" rot="R180"/>
+<pin name="GND@7" x="15.08" y="-14.5" length="middle" rot="R180"/>
+<pin name="36" x="15.08" y="-16.5" length="middle" rot="R180"/>
+<pin name="38" x="15.08" y="-18.5" length="middle" rot="R180"/>
+<pin name="40" x="15.08" y="-20.5" length="middle" rot="R180"/>
+<wire x1="-9.58" y1="-24.5" x2="-9.58" y2="20.5" width="0.254" layer="94"/>
+<wire x1="-9.58" y1="20.5" x2="10.08" y2="20.5" width="0.254" layer="94"/>
+<wire x1="10.08" y1="20.5" x2="10.08" y2="-24.5" width="0.254" layer="94"/>
+<wire x1="10.08" y1="-24.5" x2="-9.58" y2="-24.5" width="0.254" layer="94"/>
+<text x="-1.5" y="23" size="1.778" layer="94">J8</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO" prefix="ARDUINO_NANO" uservalue="yes">
@@ -768,6 +878,60 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <connect gate="G$1" pin="USBD+" pad="P$5"/>
 <connect gate="G$1" pin="USBD-" pad="P$4"/>
 <connect gate="G$1" pin="VIN" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GPIO_PI4" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="GPIO_PI4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GPIO_PI4">
+<connects>
+<connect gate="G$1" pin="10" pad="P35"/>
+<connect gate="G$1" pin="11" pad="P5"/>
+<connect gate="G$1" pin="12" pad="P34"/>
+<connect gate="G$1" pin="13" pad="P6"/>
+<connect gate="G$1" pin="15" pad="P7"/>
+<connect gate="G$1" pin="16" pad="P32"/>
+<connect gate="G$1" pin="18" pad="P31"/>
+<connect gate="G$1" pin="19" pad="P9"/>
+<connect gate="G$1" pin="21" pad="P10"/>
+<connect gate="G$1" pin="22" pad="P29"/>
+<connect gate="G$1" pin="23" pad="P11"/>
+<connect gate="G$1" pin="24" pad="P28"/>
+<connect gate="G$1" pin="26" pad="P27"/>
+<connect gate="G$1" pin="27" pad="P13"/>
+<connect gate="G$1" pin="28" pad="P26"/>
+<connect gate="G$1" pin="29" pad="P14"/>
+<connect gate="G$1" pin="3" pad="P1"/>
+<connect gate="G$1" pin="31" pad="P15"/>
+<connect gate="G$1" pin="32" pad="P24"/>
+<connect gate="G$1" pin="33" pad="P16"/>
+<connect gate="G$1" pin="35" pad="P17"/>
+<connect gate="G$1" pin="36" pad="P22"/>
+<connect gate="G$1" pin="37" pad="P18"/>
+<connect gate="G$1" pin="38" pad="P21"/>
+<connect gate="G$1" pin="3V3@1" pad="P0"/>
+<connect gate="G$1" pin="3V3@2" pad="P8"/>
+<connect gate="G$1" pin="40" pad="P20"/>
+<connect gate="G$1" pin="5" pad="P2"/>
+<connect gate="G$1" pin="5V@1" pad="P39"/>
+<connect gate="G$1" pin="5V@2" pad="P38"/>
+<connect gate="G$1" pin="7" pad="P3"/>
+<connect gate="G$1" pin="8" pad="P36"/>
+<connect gate="G$1" pin="GND@1" pad="P37"/>
+<connect gate="G$1" pin="GND@2" pad="P4"/>
+<connect gate="G$1" pin="GND@3" pad="P33"/>
+<connect gate="G$1" pin="GND@4" pad="P30"/>
+<connect gate="G$1" pin="GND@5" pad="P12"/>
+<connect gate="G$1" pin="GND@6" pad="P25"/>
+<connect gate="G$1" pin="GND@7" pad="P23"/>
+<connect gate="G$1" pin="GND@9" pad="P19"/>
 </connects>
 <technologies>
 <technology name=""/>
