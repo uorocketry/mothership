@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -158,64 +158,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="uORocketry-parts">
-<packages>
-<package name="OSLONSSL150">
-<smd name="P$1" x="0" y="0" dx="2.7" dy="1" layer="1"/>
-<smd name="P$2" x="0" y="1.1" dx="2.7" dy="0.5" layer="1"/>
-<smd name="P$3" x="0" y="-1.1" dx="2.7" dy="0.5" layer="1"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.0762" layer="112"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.0762" layer="112"/>
-<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.0762" layer="112"/>
-<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.0762" layer="112"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LED">
-<description>&lt;h3&gt;LED&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;</description>
-<wire x1="-5.08" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="-2.032" x2="-2.921" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="-3.175" y1="-1.905" x2="-1.778" y2="-3.302" width="0.1524" layer="94"/>
-<text x="-0.508" y="-3.429" size="1.778" layer="95" font="vector" rot="R180">&gt;NAME</text>
-<text x="-0.508" y="1.905" size="1.778" layer="96" font="vector" rot="R180" align="top-left">&gt;VALUE</text>
-<pin name="C" x="0" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-2.921" y="-3.429"/>
-<vertex x="-3.81" y="-3.048"/>
-<vertex x="-3.302" y="-2.54"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-1.778" y="-3.302"/>
-<vertex x="-2.667" y="-2.921"/>
-<vertex x="-2.159" y="-2.413"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="OSLONSSL150">
-<gates>
-<gate name="G$1" symbol="LED" x="5.08" y="0"/>
-</gates>
-<devices>
-<device name="" package="OSLONSSL150">
-<connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="C" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -1173,6 +1115,66 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="uORocketry-parts">
+<packages>
+<package name="LUXEON-CZ">
+<smd name="P$1" x="0" y="0" dx="1.8" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.75" y="0" dx="1.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$3" x="0.75" y="0" dx="1.8" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.0762" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.0762" layer="51"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.0762" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.0762" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<description>&lt;h3&gt;LED&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+<wire x1="-5.08" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="-2.032" x2="-2.921" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="-1.905" x2="-1.778" y2="-3.302" width="0.1524" layer="94"/>
+<text x="-8.128" y="-3.429" size="1.778" layer="95" font="vector" rot="R180">&gt;NAME</text>
+<text x="-8.128" y="1.905" size="1.778" layer="96" font="vector" rot="R180" align="top-left">&gt;VALUE</text>
+<pin name="C" x="0" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-2.921" y="-3.429"/>
+<vertex x="-3.81" y="-3.048"/>
+<vertex x="-3.302" y="-2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.778" y="-3.302"/>
+<vertex x="-2.667" y="-2.921"/>
+<vertex x="-2.159" y="-2.413"/>
+</polygon>
+<pin name="P$1" x="-5.08" y="-5.08" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LUXEON-CZ">
+<gates>
+<gate name="G$1" symbol="LED" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="LUXEON-CZ">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$3"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1183,54 +1185,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="U$1" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$2" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$3" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$4" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$5" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$6" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$7" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
-<part name="U$8" library="uORocketry-parts" deviceset="OSLONSSL150" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="22MOHM" device="-0603-1/10W-10%" value="22M"/>
+<part name="U$1" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$2" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$3" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$4" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$5" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$6" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$7" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
+<part name="U$8" library="uORocketry-parts" deviceset="LUXEON-CZ" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="48.26" y="55.88" smashed="yes">
-<attribute name="NAME" x="47.752" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="47.752" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$2" gate="G$1" x="63.5" y="55.88" smashed="yes">
-<attribute name="NAME" x="62.992" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="62.992" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$3" gate="G$1" x="78.74" y="55.88" smashed="yes">
-<attribute name="NAME" x="78.232" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="78.232" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$4" gate="G$1" x="91.44" y="55.88" smashed="yes">
-<attribute name="NAME" x="90.932" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="90.932" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$5" gate="G$1" x="48.26" y="40.64" smashed="yes">
-<attribute name="NAME" x="47.752" y="37.211" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="47.752" y="42.545" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$6" gate="G$1" x="63.5" y="40.64" smashed="yes">
-<attribute name="NAME" x="62.992" y="37.211" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="62.992" y="42.545" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$7" gate="G$1" x="78.74" y="40.64" smashed="yes">
-<attribute name="NAME" x="78.232" y="37.211" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="78.232" y="42.545" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
-<instance part="U$8" gate="G$1" x="93.98" y="40.64" smashed="yes">
-<attribute name="NAME" x="93.472" y="37.211" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="42.545" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
-</instance>
 <instance part="J1" gate="G$1" x="17.78" y="68.58" smashed="yes">
 <attribute name="VALUE" x="15.24" y="63.754" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="15.24" y="74.168" size="1.778" layer="95" font="vector"/>
@@ -1239,75 +1209,56 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="33.02" y="54.356" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="33.02" y="57.404" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
+<instance part="U$1" gate="G$1" x="48.26" y="55.88" smashed="yes">
+<attribute name="NAME" x="40.132" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="40.132" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$2" gate="G$1" x="58.42" y="55.88" smashed="yes">
+<attribute name="NAME" x="50.292" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="50.292" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$3" gate="G$1" x="68.58" y="55.88" smashed="yes">
+<attribute name="NAME" x="60.452" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="60.452" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$4" gate="G$1" x="78.74" y="55.88" smashed="yes">
+<attribute name="NAME" x="70.612" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="70.612" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$5" gate="G$1" x="88.9" y="55.88" smashed="yes">
+<attribute name="NAME" x="80.772" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="80.772" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$6" gate="G$1" x="99.06" y="55.88" smashed="yes">
+<attribute name="NAME" x="90.932" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="90.932" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$7" gate="G$1" x="109.22" y="55.88" smashed="yes">
+<attribute name="NAME" x="101.092" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="101.092" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="U$8" gate="G$1" x="119.38" y="55.88" smashed="yes">
+<attribute name="NAME" x="111.252" y="52.451" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="111.252" y="57.785" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="C"/>
-<pinref part="U$2" gate="G$1" pin="A"/>
-<wire x1="48.26" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="C"/>
-<pinref part="U$3" gate="G$1" pin="A"/>
-<wire x1="63.5" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="C"/>
-<pinref part="U$4" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="C"/>
-<wire x1="91.44" y1="55.88" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="A"/>
-<wire x1="40.64" y1="48.26" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="C"/>
-<pinref part="U$6" gate="G$1" pin="A"/>
-<wire x1="48.26" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$6" gate="G$1" pin="C"/>
-<pinref part="U$7" gate="G$1" pin="A"/>
-<wire x1="63.5" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="C"/>
-<pinref part="U$8" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="-" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="G$1" pin="C"/>
-<wire x1="25.4" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="71.12" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 <label x="40.64" y="71.12" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="C"/>
+<wire x1="119.38" y1="55.88" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="A"/>
 <wire x1="38.1" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="+" class="0">
@@ -1316,6 +1267,103 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="55.88" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="C"/>
+<pinref part="U$2" gate="G$1" pin="A"/>
+<wire x1="48.26" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="C"/>
+<pinref part="U$3" gate="G$1" pin="A"/>
+<wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="C"/>
+<pinref part="U$4" gate="G$1" pin="A"/>
+<wire x1="68.58" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="C"/>
+<pinref part="U$5" gate="G$1" pin="A"/>
+<wire x1="78.74" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="C"/>
+<pinref part="U$6" gate="G$1" pin="A"/>
+<wire x1="88.9" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="C"/>
+<pinref part="U$7" gate="G$1" pin="A"/>
+<wire x1="99.06" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="C"/>
+<pinref part="U$8" gate="G$1" pin="A"/>
+<wire x1="109.22" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<wire x1="43.18" y1="50.8" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<wire x1="53.34" y1="50.8" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="63.5" y1="50.8" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="73.66" y1="50.8" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="83.82" y1="50.8" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="93.98" y1="50.8" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="P$1"/>
+<wire x1="104.14" y1="50.8" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<wire x1="114.3" y1="50.8" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
