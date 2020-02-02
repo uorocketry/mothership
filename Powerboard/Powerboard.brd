@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -160,11 +160,11 @@
 <plain>
 <wire x1="3" y1="0" x2="84.5" y2="0" width="0" layer="20"/>
 <wire x1="84.5" y1="0" x2="87.5" y2="3" width="0" layer="20" curve="90"/>
-<wire x1="87.5" y1="3" x2="87.5" y2="147" width="0" layer="20"/>
-<wire x1="87.5" y1="147" x2="84.5" y2="150" width="0" layer="20" curve="90"/>
-<wire x1="84.5" y1="150" x2="3" y2="150" width="0" layer="20"/>
-<wire x1="3" y1="150" x2="0" y2="147" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="147" x2="0" y2="3" width="0" layer="20"/>
+<wire x1="87.5" y1="3" x2="87.5" y2="160.033" width="0" layer="20"/>
+<wire x1="87.5" y1="160.033" x2="84.5" y2="162.7" width="0" layer="20" curve="100"/>
+<wire x1="84.5" y1="162.7" x2="3" y2="162.7" width="0" layer="20"/>
+<wire x1="3" y1="162.7" x2="0" y2="160.033" width="0" layer="20" curve="100"/>
+<wire x1="0" y1="160.033" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="27.56" y1="58.34" x2="27.56" y2="30.4" width="0.2032" layer="51"/>
 <wire x1="27.56" y1="30.4" x2="55.5" y2="30.4" width="0.2032" layer="51"/>
@@ -178,10 +178,10 @@
 <text x="51.563" y="44.9034" size="1.016" layer="21" font="vector" ratio="15" rot="R180">GND</text>
 <text x="51.563" y="47.4434" size="1.016" layer="21" font="vector" ratio="15" rot="R180">VOUT</text>
 <text x="51.563" y="42.3634" size="1.016" layer="21" font="vector" ratio="15" rot="R180">TRIM</text>
-<hole x="9.75" y="140" drill="6.6"/>
+<hole x="9.75" y="152.7" drill="6.6"/>
 <hole x="9.75" y="10" drill="6.6"/>
 <hole x="77.75" y="10" drill="6.6"/>
-<hole x="77.75" y="140" drill="6.6"/>
+<hole x="77.75" y="152.7" drill="6.6"/>
 <dimension x1="26" y1="150" x2="26" y2="0" x3="-15" y3="75" textsize="1.778" layer="47"/>
 <dimension x1="0" y1="49.5" x2="87.5" y2="49.5" x3="43.75" y3="-7" textsize="1.778" layer="47"/>
 <text x="72.8" y="76.55" size="1.9304" layer="51">+</text>
@@ -189,8 +189,8 @@
 <text x="6" y="99" size="1.778" layer="48">uORocketry </text>
 <text x="6.25" y="95" size="1.778" layer="48">Power Board</text>
 <text x="12" y="91.75" size="1.778" layer="48">v1.0</text>
-<circle x="9.75" y="140" radius="5.125" width="0" layer="39"/>
-<circle x="77.75" y="140" radius="5.125" width="0" layer="39"/>
+<circle x="9.75" y="152.7" radius="5.125" width="0" layer="39"/>
+<circle x="77.75" y="152.7" radius="5.125" width="0" layer="39"/>
 <circle x="77.75" y="10" radius="5.125" width="0" layer="39"/>
 <circle x="9.75" y="10" radius="5.125" width="0" layer="39"/>
 <hole x="10" y="111" drill="12"/>
