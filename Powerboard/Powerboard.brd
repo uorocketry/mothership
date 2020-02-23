@@ -209,6 +209,19 @@
 <dimension x1="23.9" y1="150" x2="24.3" y2="137.6" x3="21.6" y3="143.8" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="24.3" y1="137.3" x2="63.3" y2="137.4" x3="43.8" y3="152.4" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="64.94995" y1="137.613075" x2="61.55005" y2="137.586925" x3="63.29999375" y3="131.1" textsize="1.778" layer="47" dtype="diameter"/>
+<hole x="16.5678" y="33.8156" drill="3.4"/>
+<hole x="16.5284" y="27.237" drill="3.4"/>
+<hole x="71.618" y="33.8156" drill="3.4"/>
+<hole x="71.618" y="27.237" drill="3.4"/>
+<hole x="5.2" y="143.4112" drill="3.4"/>
+<hole x="10.407" y="143.4112" drill="3.4"/>
+<hole x="15.4108" y="143.4112" drill="3.4"/>
+<hole x="71.1384" y="143.4112" drill="3.4"/>
+<hole x="76.7264" y="143.4112" drill="3.4"/>
+<hole x="82.3144" y="143.4112" drill="3.4"/>
+<hole x="23.7928" y="5.413" drill="3.4"/>
+<hole x="60.7498" y="5.413" drill="3.4"/>
+<hole x="62.6396" y="112.3894" drill="3.4"/>
 </plain>
 <libraries>
 <library name="SparkFun">
