@@ -1,0 +1,6 @@
+Partlist exported from /Users/paul/Documents/code/rocket/mothership/CAN_RGX_LED/can_rgx_led.sch at 2020-01-29 07:43
+
+Qty Value       Device                Package     Parts                                  Description                                                                                                     PROD_ID   VALUE
+1               CONN_02               1X02        J1                                     Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                
+1   22M         22MOHM-0603-1/10W-10% 0603        R1                                     22MΩ resistor                                                                                                   RES-11132 22M  
+8   OSLONSSL150 OSLONSSL150           OSLONSSL150 U$1, U$2, U$3, U$4, U$5, U$6, U$7, U$8                                                                                                                                

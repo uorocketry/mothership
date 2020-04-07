@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-01-29T12:43:24Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "can_rgx_led"
+        },
+        "Owner": "Paul Buzuloiu <pbuzu025@uottawa.ca>",
+        "Size": {
+            "X": 240,
+            "Y": 13
+        }
+    }
+}
